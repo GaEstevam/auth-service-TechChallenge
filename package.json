@@ -1,0 +1,40 @@
+{
+  "name": "auth-service-techchallenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaEstevam/auth-service-TechChallenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaEstevam/auth-service-TechChallenge/issues"
+  },
+  "homepage": "https://github.com/GaEstevam/auth-service-TechChallenge#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "prom-client": "^13.1.0"
+  }
+}
