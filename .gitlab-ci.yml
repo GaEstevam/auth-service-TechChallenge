@@ -1,0 +1,40 @@
+stages:
+  - install
+  - lint
+  - test
+  - build
+  - deploy
+
+variables:
+  NODE_ENV: development
+
+cache:
+  paths:
+    - node_modules/
+
+install:
+  stage: install
+  script:
+    - npm install
+
+lint:
+  stage: lint
+  script:
+    - npm run lint
+
+test:
+  stage: test
+  script:
+    - npm run test
+
+build:
+  stage: build
+  script:
+    - echo "Build do auth-service concluído."
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Emulando deploy do auth-service para produção"
+    - mkdir -p ./dist
+    - cp -r * ./dist/
